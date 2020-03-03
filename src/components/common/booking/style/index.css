@@ -1,0 +1,109 @@
+.wrap-booking{
+    margin-top: 112px;
+    padding: 0 80px;
+}
+.wrap-booking .content{
+    box-sizing: border-box;
+    height: 511px;
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 32px;
+    padding-bottom: 24px;
+    width: 441px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+    margin-top: 112px;
+    position: relative;
+}
+.wrap-booking .content .place{
+    margin-top: 20px;
+}
+.wrap-booking .content .date-picker{
+    display: flex;
+    margin-top: 20px;
+
+}
+.wrap-booking .content .header{
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: normal;
+}
+.wrap-booking .content .submit{
+    position: absolute;
+    bottom: 35px;
+    right: 32px;
+    border-radius: var(--border-button-border-radius, 4px);
+    font-size: var(--font-button-font-size, 16px);
+    line-height: var(--font-button-line-height, 24px);
+    letter-spacing: var(--font-button-letter-spacing, normal);
+    font-family: var(--font-button-font-family, Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif);
+    text-transform: var(--font-button-text-transform, undefined);
+    padding-top: var(--spacing-button-vertical, 10px);
+    padding-bottom: var(--spacing-button-vertical, 10px);
+    font-weight: var(--font-bold-font-weight, 800);
+    border-width: var(--border-button-border-width, 2px);
+    padding-left: var(--spacing-button-horizontal, 22px);
+    padding-right: var(--spacing-button-horizontal, 22px);
+    box-shadow: var(--shadow-button-level0-box-shadow, none);
+    background: var(--color-buttons-primary-color, #FF5A5F);
+    border-color: var(--color-buttons-primary-border, transparent);
+    color: var(--color-buttons-primary-text, #ffffff);
+}
+.wrap-booking .jsx-suggest-panel {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    position: relative;
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: 48px;
+}
+.wrap-booking span.ims-input {
+    width: 100%;
+    height: 100%;
+}
+.wrap-booking  input#input_a2nk {
+    font-size: 17px;
+    background-color: transparent;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-overflow: ellipsis;
+    height: 100%;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+.wrap-booking  .from-date {
+    width: 50%;
+}
+.wrap-booking  .from-date .ardp-date-picker {
+    border-right: none;
+}
+.wrap-booking  .to-date {
+    width: 50%; 
+}
+.wrap-booking  .ardp-date-picker {
+    border: 1px solid #EBEBEB; 
+    border-radius: 3px 0 0 3px;
+    height: 50px;
+}
+div.ardp-date-picker > input {
+    border: none;
+    font-size: 17px;
+    background-color: transparent;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 50px;
+}
+.jsx-suggest-panel .jsx-suggest-wrapper {
+    top: 48px;
+}

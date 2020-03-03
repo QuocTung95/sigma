@@ -1,0 +1,19 @@
+
+.wrap-menu ul {
+    height: 80px;
+    float: right;
+}
+
+.wrap-menu li {
+    float: left;
+    list-style: none;
+    padding: 8px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    font-size: 14px;
+}
+
+.wrap-menu ul:after {
+    content: "";
+    clear: both;
+    display: table;
+}

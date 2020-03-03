@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.App{
+
+  margin: auto;
+  position: relative;
+  width: 100%;
+
+}
+#root{
+  display: flex;
+    justify-content: center;
+}
+.timmer{
+  margin-bottom: 10px;
+    width: 100%;
+    height: 13px;
+    margin-top: 20px;
+    background-color: aqua;
+}
+
+div#wraper-game {box-sizing: border-box;width: 100%;display: grid;grid-template-columns: auto auto auto auto;background-color: #2196F3;padding: 10px;}
+#wraper-game.time-out-gr{
+  opacity: 0.5;
+}
+.card-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.flip-box {
+  background-color: transparent;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  padding: 5px;
+  min-width: 150px;
+  min-height: 80px;
+  width: 300px;
+  height: 200px;
+}
+.flip-box.level-hard {
+  background-color: transparent;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  padding: 5px;
+  max-width: 150px;
+  max-height: 80px;
+}
+.flip-box img{
+  width: 100%;
+  height: 100%;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box-open .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+.time-out{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.time-out .content{
+  position: relative;
+}
+.time-out .content .play-again{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 29%;
+    width: 200px;
+    height: 41px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+button.play-again:hover {
+  background-color: aqua;
+}
+.time-out img{
+  width: 50%;
+    height: 50%;
+}
+
+.choose-level{
+  position: absolute;
+  top: 50%;
+  right: 19%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Architects Daughter", "Helvetica", "sans-serif";
+}
+.choose-level .label{
+  font-size: 50px;
+  border-radius: 12px;
+  background-color: #e98638;
+  margin: 10px;
+  padding: 5px;
+}
+.choose-level .label span{
+  color: white;
+}
+.choose-level button{
+  font-size: 0.8em;
+  border-radius: 5px;
+  background: -webkit-gradient(#5F9EA0, white);
+  background: radial-gradient(#5F9EA0, white);
+  cursor: pointer;
+  width: 77px;
+  height: 36px;
+  padding: 0px;
+  margin: 0px auto;
+  border: navajowhite;
+  cursor: pointer;
+  margin: 10px;
+  width: 261px;
+}
+.choose-level button:hover{
+  background: -moz-radial-gradient(white, #5F9EA0);
+  background: -webkit-gradient(white, #5F9EA0);
+  background: -webkit-radial-gradient(white, #5F9EA0);
+  background: -o-radial-gradient(white, #5F9EA0);
+  background: -ms-radial-gradient(white, #5F9EA0);
+  background: radial-gradient(white, #5F9EA0);
+}

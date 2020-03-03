@@ -1,0 +1,79 @@
+.main-content {
+    box-sizing: border-box;
+    padding: 0 80px;
+}
+
+.all-new {
+    display: flex;
+    /* border-radius: 8px; */
+}
+
+.wrap-news-in-home .item-new {
+    width: 33%;
+    border-radius: 8px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    box-shadow: darkcyan;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px !important;
+}
+
+.wrap-news-in-home .image {
+    width: 126px;
+    border-radius: 8px;
+}
+
+.wrap-news-in-home img {
+    width: 100%;
+    border-radius: 8px;
+    /* height: 100%; */
+}
+
+.wrap-news-in-home .discover {
+    margin-bottom: 72px;
+}
+
+.wrap-news-in-home .text-new {
+    padding-left: 15px;
+    font-weight: 600;
+}
+.wrap-news-in-home .sub-news .content{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap-news-in-home .sub-news .content .inner{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.wrap-news-in-home .sub-news .content .inner .button{
+    margin-top: 20px;
+}
+.wrap-news-in-home .sub-news .content .inner .button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: auto;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: normal;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    color: rgb(72, 72, 72);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-weight: 800;
+    box-shadow: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 48.541px;
+    margin: 0px;
+    text-decoration: none;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    background: rgb(255, 255, 255);
+}
