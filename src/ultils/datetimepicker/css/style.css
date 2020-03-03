@@ -7,9 +7,9 @@ div.ardp-date-picker {
 }
 
 div.ardp-date-picker > input {
-    background: url("/statics/images/date-picker-icon.png") #fff 5px center no-repeat !important;
+    background: url("../../../static/images/date-picker-icon.png") #fff 5px center no-repeat;
     text-indent: 24px;
-    font: 14px Calibri !important;
+    font: 14px Calibri;
     text-align: left;
     padding: 3px;
     border: solid 1px #ccc;
